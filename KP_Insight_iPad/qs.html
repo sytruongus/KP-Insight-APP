@@ -1,0 +1,4676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software, see www.sas.com" sasversion="9.1">
+<meta http-equiv="Content-type" content="charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.notecontent
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.GraphLegendBackground
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.fatalcontent
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.DropShadowStyle
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.headeremphasis
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.NormalText
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.warncontentfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.Column
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.Graph
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.Heading1
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.GraphLabelText
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #3872AC;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.datastrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  vertical-align: top;
+}
+.notebanner
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.Heading3
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.GraphTitle
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #666666;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+}
+.Heading2
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.Data
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  vertical-align: top;
+}
+.Table
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+}
+.ProcTitle
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.Container
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.GraphValueText
+{
+  font-family: Arial;
+  font-size: 11pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.GraphAxisLines
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #003399;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.footerempty
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.GraphBorderLines
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #003399;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.rowfooterempty
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.GraphWalls
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.rowfooteremphasis
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.rowfooterfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.footerfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterstrongfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.Note
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.notecontentfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.headerstrongfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.warnbanner
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.fatalbanner
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.DrillDetailData
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #34699E;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.GraphData8
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #61A1A3;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.rowfooteremphasisfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.proctitlefixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.GraphData9
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #A89D74;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.warncontent
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.Header
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.Body
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.dataempty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  vertical-align: top;
+}
+.rowheaderfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.rowheaderempty
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.headerfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.GraphCrumbTrail
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  border-width: 0px;
+  border-color: #3872AC;
+  border-style: solid;
+}
+.headerempty
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.batch
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.datafixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 8pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  vertical-align: top;
+}
+.footerstrong
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.GraphData1
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #94B7DA;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.TwoColorRamp
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.footeremphasis
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.errorcontent
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.GraphData3
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #DCC685;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.GraphBackground
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.rowfooter
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.dataemphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  vertical-align: top;
+}
+.GraphData2
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #B6D2A2;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.DrillDetailHover
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #34699E;
+  text-decoration: underline;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.TwoColorAltRamp
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.GraphData11
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #EEEAC1;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.GraphData5
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #B6D8EA;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.fatalcontentfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.headerstrong
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.GraphFloor
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.GraphData10
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #B4BDDB;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.GraphData4
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #9089AD;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.GraphData7
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #A86B86;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.footeremphasisfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.GraphData6
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #D2D2C1;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.BodyText
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.rowfooterstrong
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.GraphData12
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #91A2A9;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.Default
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.AlignContents
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  text-align: left;
+  vertical-align: middle;
+}
+.rowheaderemphasisfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.errorbanner
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.datafixedemphasis
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 8pt;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  vertical-align: top;
+}
+.rowheaderstrong
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.rowheader
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.GraphOutlines
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #003399;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.rowheaderstrongfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.GraphCharts
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.GraphTitleText
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.rowheaderemphasis
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.GraphGridLines
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #C2C7D2;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #3872AC;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+  border-style: solid;
+}
+.footer
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.systemfooter
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.headeremphasisfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.SystemTitle
+{
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+  border-right-color: #000000;
+  border-left-color: #000000;
+}
+.errorcontentfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 2px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: left;
+  vertical-align: middle;
+}
+.datastrongfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 8pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  vertical-align: top;
+}
+.footerstrongfixed
+{
+  font-family: Courier New, Courier, fixed;
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: normal;
+  color: #003399;
+  background-color: #FAF3D4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 0px;
+  border-top-color: #3872AC;
+  border-bottom-color: #3872AC;
+  border-right-color: #3872AC;
+  border-left-color: #3872AC;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  text-align: center;
+  vertical-align: middle;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: "." }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+<noscript></noscript>
+</head>
+<body onload="startup()" onunload="shutdown()" class="Body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<noscript></noscript>
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c SystemTitle" style=" font-size: x-small;">Index of Datasets</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="Table" cellspacing="0" cellpadding="3" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c Header" scope="col">Count</th>
+<th class="c Header" scope="col">Dataset Name</th>
+<th class="c Header" scope="col">Dataset Label</th>
+<th class="c Header" scope="col">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r Data" style=" background-color: #FFFFFF;">              1</td>
+<td class="l Data" style=" background-color: #FFFFFF;">TMP3.QS</td>
+<td class="c Data" style=" background-color: #FFFFFF;">&nbsp;</td>
+<td class="l Data" style=" background-color: #FFFFFF;"><a href="#PRINT QS">PRINT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter" style=" font-size: x-small;">Generated on: 10/17/2011, 12:15:19 pm, struong</td>
+</tr>
+<tr>
+<td class="c systemfooter" style=" font-size: x-small;">Report path: C:\Temp\cdisc\output\qs.html</td>
+</tr>
+<tr>
+<td class="c systemfooter" style=" font-size: x-small;">Data path: C:\Temp\cdisc\sample data</td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c SystemTitle" style=" font-size: x-small;"><a name="PRINT QS">PROC PRINT of TMP3.QS (first 100 observation)</a></td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="Table" cellspacing="0" cellpadding="3" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c Header" scope="col">Obs</th>
+<th class="c Header" scope="col">Study Identifier</th>
+<th class="c Header" scope="col">Domain Abbreviation</th>
+<th class="c Header" scope="col">Unique Subject Identifier</th>
+<th class="c Header" scope="col">Sequence Number</th>
+<th class="c Header" scope="col">Sponsor-Defined Identifier</th>
+<th class="c Header" scope="col">Question Short Name</th>
+<th class="c Header" scope="col">Question Name</th>
+<th class="c Header" scope="col">Category of Question</th>
+<th class="c Header" scope="col">Finding in Original Units</th>
+<th class="c Header" scope="col">Character Result<br>Finding in Std Format</th>
+<th class="c Header" scope="col">Numeric Finding in Standard Units</th>
+<th class="c Header" scope="col">Baseline Flag</th>
+<th class="c Header" scope="col">Visit Number</th>
+<th class="c Header" scope="col">Visit Name</th>
+<th class="c Header" scope="col">Planned Study Day of Visit</th>
+<th class="c Header" scope="col">Date<br>Time of Finding</th>
+<th class="c Header" scope="col">Study Day of Finding</th>
+<th class="c Header" scope="col">Evaluator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r Data">              1</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">              1</td>
+<td class="l Data">CGI-CGI-I</td>
+<td class="l Data">CGIGLOB</td>
+<td class="l Data">Global Improvement</td>
+<td class="l Data">Clinical Global Impressions</td>
+<td class="l Data">No change</td>
+<td class="l Data">4</td>
+<td class="r Data">              4</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">JSR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CGI-CGI-I</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CGIGLOB</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Global Improvement</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Clinical Global Impressions</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Much Improved</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">JSR</td>
+</tr>
+<tr>
+<td class="r Data">              3</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">              3</td>
+<td class="l Data">CSDD-01</td>
+<td class="l Data">CSDD01</td>
+<td class="l Data">Anxiety</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Severe</td>
+<td class="l Data">2</td>
+<td class="r Data">              2</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">              4</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              4</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-02</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD02</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Sadness</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Severe</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">              5</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">              5</td>
+<td class="l Data">CSDD-03</td>
+<td class="l Data">CSDD03</td>
+<td class="l Data">Lack of Reactivity to Pleasant Events</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">              6</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              6</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-04</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD04</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Irritability</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">              7</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">              7</td>
+<td class="l Data">CSDD-05</td>
+<td class="l Data">CSDD05</td>
+<td class="l Data">Agitation</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">              8</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              8</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-06</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD06</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Retardation</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">              9</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">              9</td>
+<td class="l Data">CSDD-07</td>
+<td class="l Data">CSDD07</td>
+<td class="l Data">Multiple Physical Complaints</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-08</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD08</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Loss of Interest</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             11</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             11</td>
+<td class="l Data">CSDD-09</td>
+<td class="l Data">CSDD09</td>
+<td class="l Data">Appetite Loss</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             12</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             12</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Weight Loss</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             13</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             13</td>
+<td class="l Data">CSDD-11</td>
+<td class="l Data">CSDD11</td>
+<td class="l Data">Lack of Energy</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Severe</td>
+<td class="l Data">2</td>
+<td class="r Data">              2</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-12</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD12</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Diurnal Variation of Mood</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             15</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             15</td>
+<td class="l Data">CSDD-13</td>
+<td class="l Data">CSDD13</td>
+<td class="l Data">Difficulty Falling Asleep</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Multiple Awakenings During Sleep</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Severe</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             17</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             17</td>
+<td class="l Data">CSDD-15</td>
+<td class="l Data">CSDD15</td>
+<td class="l Data">Early Morning Awakening</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             18</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             18</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Suicide</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             19</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             19</td>
+<td class="l Data">CSDD-17</td>
+<td class="l Data">CSDD17</td>
+<td class="l Data">Poor Self-Esteem</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             20</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             20</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-18</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD18</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Pessimism</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             21</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             21</td>
+<td class="l Data">CSDD-19</td>
+<td class="l Data">CSDD19</td>
+<td class="l Data">Mood-Congruent Delusions</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             22</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             22</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-TOTAL</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDDTOT</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Total Score</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">16</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             16</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             23</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             23</td>
+<td class="l Data">CSDD-01</td>
+<td class="l Data">CSDD01</td>
+<td class="l Data">Anxiety</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Severe</td>
+<td class="l Data">2</td>
+<td class="r Data">              2</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             24</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             24</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-02</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD02</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Sadness</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             25</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             25</td>
+<td class="l Data">CSDD-03</td>
+<td class="l Data">CSDD03</td>
+<td class="l Data">Lack of Reactivity to Pleasant Events</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             26</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             26</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-04</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD04</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Irritability</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             27</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             27</td>
+<td class="l Data">CSDD-05</td>
+<td class="l Data">CSDD05</td>
+<td class="l Data">Agitation</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             28</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             28</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-06</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD06</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Retardation</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             29</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             29</td>
+<td class="l Data">CSDD-07</td>
+<td class="l Data">CSDD07</td>
+<td class="l Data">Multiple Physical Complaints</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             30</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             30</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-08</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD08</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Loss of Interest</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             31</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             31</td>
+<td class="l Data">CSDD-09</td>
+<td class="l Data">CSDD09</td>
+<td class="l Data">Appetite Loss</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             32</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             32</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Weight Loss</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             33</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             33</td>
+<td class="l Data">CSDD-11</td>
+<td class="l Data">CSDD11</td>
+<td class="l Data">Lack of Energy</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             34</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             34</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-12</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD12</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Diurnal Variation of Mood</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             35</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             35</td>
+<td class="l Data">CSDD-13</td>
+<td class="l Data">CSDD13</td>
+<td class="l Data">Difficulty Falling Asleep</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             36</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             36</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Multiple Awakenings During Sleep</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Severe</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             37</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             37</td>
+<td class="l Data">CSDD-15</td>
+<td class="l Data">CSDD15</td>
+<td class="l Data">Early Morning Awakening</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             38</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             38</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Suicide</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             39</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             39</td>
+<td class="l Data">CSDD-17</td>
+<td class="l Data">CSDD17</td>
+<td class="l Data">Poor Self-Esteem</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             40</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             40</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-18</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD18</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Pessimism</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             41</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             41</td>
+<td class="l Data">CSDD-19</td>
+<td class="l Data">CSDD19</td>
+<td class="l Data">Mood-Congruent Delusions</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             42</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             42</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-TOTAL</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDDTOT</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Total Score</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             43</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             43</td>
+<td class="l Data">CSDD-01</td>
+<td class="l Data">CSDD01</td>
+<td class="l Data">Anxiety</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             44</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             44</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-02</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD02</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Sadness</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             45</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             45</td>
+<td class="l Data">CSDD-03</td>
+<td class="l Data">CSDD03</td>
+<td class="l Data">Lack of Reactivity to Pleasant Events</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             46</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             46</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-04</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD04</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Irritability</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             47</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             47</td>
+<td class="l Data">CSDD-05</td>
+<td class="l Data">CSDD05</td>
+<td class="l Data">Agitation</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             48</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             48</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-06</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD06</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Retardation</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             49</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             49</td>
+<td class="l Data">CSDD-07</td>
+<td class="l Data">CSDD07</td>
+<td class="l Data">Multiple Physical Complaints</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             50</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             50</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-08</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD08</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Loss of Interest</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             51</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             51</td>
+<td class="l Data">CSDD-09</td>
+<td class="l Data">CSDD09</td>
+<td class="l Data">Appetite Loss</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             52</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             52</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Weight Loss</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             53</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             53</td>
+<td class="l Data">CSDD-11</td>
+<td class="l Data">CSDD11</td>
+<td class="l Data">Lack of Energy</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             54</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             54</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-12</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD12</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Diurnal Variation of Mood</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             55</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             55</td>
+<td class="l Data">CSDD-13</td>
+<td class="l Data">CSDD13</td>
+<td class="l Data">Difficulty Falling Asleep</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             56</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             56</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Multiple Awakenings During Sleep</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             57</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             57</td>
+<td class="l Data">CSDD-15</td>
+<td class="l Data">CSDD15</td>
+<td class="l Data">Early Morning Awakening</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             58</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             58</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD16</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Suicide</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             59</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             59</td>
+<td class="l Data">CSDD-17</td>
+<td class="l Data">CSDD17</td>
+<td class="l Data">Poor Self-Esteem</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             60</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             60</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-18</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD18</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Pessimism</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-05-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             61</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             61</td>
+<td class="l Data">CSDD-19</td>
+<td class="l Data">CSDD19</td>
+<td class="l Data">Mood-Congruent Delusions</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              3</td>
+<td class="l Data">WEEK 2</td>
+<td class="r Data">             15</td>
+<td class="l Data">2003-05-13</td>
+<td class="r Data">             15</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             62</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             62</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Anxiety</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             63</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             63</td>
+<td class="l Data">CSDD-02</td>
+<td class="l Data">CSDD02</td>
+<td class="l Data">Sadness</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             64</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             64</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-03</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD03</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Lack of Reactivity to Pleasant Events</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             65</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             65</td>
+<td class="l Data">CSDD-04</td>
+<td class="l Data">CSDD04</td>
+<td class="l Data">Irritability</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             66</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             66</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-05</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD05</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Agitation</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             67</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             67</td>
+<td class="l Data">CSDD-06</td>
+<td class="l Data">CSDD06</td>
+<td class="l Data">Retardation</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             68</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             68</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-07</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD07</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Multiple Physical Complaints</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             69</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             69</td>
+<td class="l Data">CSDD-08</td>
+<td class="l Data">CSDD08</td>
+<td class="l Data">Loss of Interest</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             70</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             70</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-09</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD09</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Appetite Loss</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             71</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             71</td>
+<td class="l Data">CSDD-10</td>
+<td class="l Data">CSDD10</td>
+<td class="l Data">Weight Loss</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             72</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             72</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-11</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD11</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Lack of Energy</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             73</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             73</td>
+<td class="l Data">CSDD-12</td>
+<td class="l Data">CSDD12</td>
+<td class="l Data">Diurnal Variation of Mood</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             74</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             74</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Difficulty Falling Asleep</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             75</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             75</td>
+<td class="l Data">CSDD-14</td>
+<td class="l Data">CSDD14</td>
+<td class="l Data">Multiple Awakenings During Sleep</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             76</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             76</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD15</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Early Morning Awakening</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mild</td>
+<td class="l Data" style=" background-color: #FFFFCC;">1</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             77</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             77</td>
+<td class="l Data">CSDD-16</td>
+<td class="l Data">CSDD16</td>
+<td class="l Data">Suicide</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Absent</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             78</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             78</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-17</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD17</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Poor Self-Esteem</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             79</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             79</td>
+<td class="l Data">CSDD-18</td>
+<td class="l Data">CSDD18</td>
+<td class="l Data">Pessimism</td>
+<td class="l Data">Cornell Scale for Depression in Dementia</td>
+<td class="l Data">Mild</td>
+<td class="l Data">1</td>
+<td class="r Data">              1</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">K-D</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             80</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             80</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD-19</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CSDD19</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mood-Congruent Delusions</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Cornell Scale for Depression in Dementia</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Absent</td>
+<td class="l Data" style=" background-color: #FFFFCC;">0</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              0</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">K-D</td>
+</tr>
+<tr>
+<td class="r Data">             81</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             81</td>
+<td class="l Data">MMSE-A.1</td>
+<td class="l Data">MMSEA1</td>
+<td class="l Data">Orientation time score</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">4</td>
+<td class="l Data">4</td>
+<td class="r Data">              4</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">JSR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             82</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             82</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-A.2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSEA2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Orientation place score</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">4</td>
+<td class="l Data" style=" background-color: #FFFFCC;">4</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              4</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">JSR</td>
+</tr>
+<tr>
+<td class="r Data">             83</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             83</td>
+<td class="l Data">MMSE-B</td>
+<td class="l Data">MMSEB</td>
+<td class="l Data">Registration</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">3</td>
+<td class="l Data">3</td>
+<td class="r Data">              3</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">JSR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             84</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             84</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-C</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSEC</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Attention and Calculation</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">5</td>
+<td class="l Data" style=" background-color: #FFFFCC;">5</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              5</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">JSR</td>
+</tr>
+<tr>
+<td class="r Data">             85</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             85</td>
+<td class="l Data">MMSE-D</td>
+<td class="l Data">MMSED</td>
+<td class="l Data">Recall</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">0</td>
+<td class="l Data">0</td>
+<td class="r Data">              0</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">JSR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             86</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             86</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-E</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSEET</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Language</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">8</td>
+<td class="l Data" style=" background-color: #FFFFCC;">8</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              8</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">SCREEN</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -13</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-15</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            -14</td>
+<td class="l Data" style=" background-color: #FFFFCC;">JSR</td>
+</tr>
+<tr>
+<td class="r Data">             87</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             87</td>
+<td class="l Data">MMSE-TOTAL</td>
+<td class="l Data">MMSETOT</td>
+<td class="l Data">Total Score</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">24</td>
+<td class="l Data">24</td>
+<td class="r Data">             24</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">              1</td>
+<td class="l Data">SCREEN</td>
+<td class="r Data">            -13</td>
+<td class="l Data">2003-04-15</td>
+<td class="r Data">            -14</td>
+<td class="l Data">JSR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             88</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             88</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-A.1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSEA1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Orientation time score</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">3</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">DLR</td>
+</tr>
+<tr>
+<td class="r Data">             89</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             89</td>
+<td class="l Data">MMSE-A.2</td>
+<td class="l Data">MMSEA2</td>
+<td class="l Data">Orientation place score</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">4</td>
+<td class="l Data">4</td>
+<td class="r Data">              4</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">DLR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             90</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             90</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-B</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSEB</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Registration</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">3</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              3</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">DLR</td>
+</tr>
+<tr>
+<td class="r Data">             91</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             91</td>
+<td class="l Data">MMSE-C</td>
+<td class="l Data">MMSEC</td>
+<td class="l Data">Attention and Calculation</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">5</td>
+<td class="l Data">5</td>
+<td class="r Data">              5</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">DLR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             92</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             92</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-D</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSED</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Recall</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">DLR</td>
+</tr>
+<tr>
+<td class="r Data">             93</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             93</td>
+<td class="l Data">MMSE-E</td>
+<td class="l Data">MMSEET</td>
+<td class="l Data">Language</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">7</td>
+<td class="l Data">7</td>
+<td class="r Data">              7</td>
+<td class="l Data">Y</td>
+<td class="r Data">              2</td>
+<td class="l Data">BASELINE</td>
+<td class="r Data">              1</td>
+<td class="l Data">2003-04-29</td>
+<td class="r Data">              1</td>
+<td class="l Data">DLR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             94</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             94</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-TOTAL</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSETOT</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Total Score</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">24</td>
+<td class="l Data" style=" background-color: #FFFFCC;">24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             24</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Y</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">BASELINE</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-04-29</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              1</td>
+<td class="l Data" style=" background-color: #FFFFCC;">DLR</td>
+</tr>
+<tr>
+<td class="r Data">             95</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             95</td>
+<td class="l Data">MMSE-A.1</td>
+<td class="l Data">MMSEA1</td>
+<td class="l Data">Orientation time score</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">5</td>
+<td class="l Data">5</td>
+<td class="r Data">              5</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">DLR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             96</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             96</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-A.2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSEA2</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Orientation place score</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">5</td>
+<td class="l Data" style=" background-color: #FFFFCC;">5</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              5</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">DLR</td>
+</tr>
+<tr>
+<td class="r Data">             97</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             97</td>
+<td class="l Data">MMSE-B</td>
+<td class="l Data">MMSEB</td>
+<td class="l Data">Registration</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">3</td>
+<td class="l Data">3</td>
+<td class="r Data">              3</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">DLR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">             98</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             98</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-C</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSEC</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Attention and Calculation</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">5</td>
+<td class="l Data" style=" background-color: #FFFFCC;">5</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              5</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">DLR</td>
+</tr>
+<tr>
+<td class="r Data">             99</td>
+<td class="l Data">CDISC01</td>
+<td class="l Data">QS</td>
+<td class="l Data">CDISC01.100008</td>
+<td class="r Data">             99</td>
+<td class="l Data">MMSE-D</td>
+<td class="l Data">MMSED</td>
+<td class="l Data">Recall</td>
+<td class="l Data">Mini Mental State Examination</td>
+<td class="l Data">2</td>
+<td class="l Data">2</td>
+<td class="r Data">              2</td>
+<td class="c Data">&nbsp;</td>
+<td class="r Data">             10</td>
+<td class="l Data">WEEK 24</td>
+<td class="r Data">            169</td>
+<td class="l Data">2003-10-13</td>
+<td class="r Data">            168</td>
+<td class="l Data">DLR</td>
+</tr>
+<tr>
+<td class="r Data" style=" background-color: #FFFFCC;">            100</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01</td>
+<td class="l Data" style=" background-color: #FFFFCC;">QS</td>
+<td class="l Data" style=" background-color: #FFFFCC;">CDISC01.100008</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            100</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSE-E</td>
+<td class="l Data" style=" background-color: #FFFFCC;">MMSEET</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Language</td>
+<td class="l Data" style=" background-color: #FFFFCC;">Mini Mental State Examination</td>
+<td class="l Data" style=" background-color: #FFFFCC;">9</td>
+<td class="l Data" style=" background-color: #FFFFCC;">9</td>
+<td class="r Data" style=" background-color: #FFFFCC;">              9</td>
+<td class="c Data" style=" background-color: #FFFFCC;">&nbsp;</td>
+<td class="r Data" style=" background-color: #FFFFCC;">             10</td>
+<td class="l Data" style=" background-color: #FFFFCC;">WEEK 24</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            169</td>
+<td class="l Data" style=" background-color: #FFFFCC;">2003-10-13</td>
+<td class="r Data" style=" background-color: #FFFFCC;">            168</td>
+<td class="l Data" style=" background-color: #FFFFCC;">DLR</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter" style=" font-size: x-small;">Generated on: 10/17/2011, 12:15:19 pm, struong</td>
+</tr>
+<tr>
+<td class="c systemfooter" style=" font-size: x-small;">Report path: C:\Temp\cdisc\output\qs.html</td>
+</tr>
+<tr>
+<td class="c systemfooter" style=" font-size: x-small;">Data path: C:\Temp\cdisc\sample data</td>
+</tr>
+</table><br>
+</div>
+</body>
+</html>
